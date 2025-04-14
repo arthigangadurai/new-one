@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Add to your HTML head -->
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>House Price Forecasting</title>
+  <link rel="stylesheet" href="house.css" />
+  <!-- Add to your HTML head -->
+
+</head>
+<body>
+  <header class="navbar">
+    <h1>🏡 House Price Forecast</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="buy.html">Buy</a></li>
+        <li><a href="sell.html">Sell</a></li>
+        <li><a href="forecast.html">Forecast</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="grid-layout">
+    <section class="hero">
+      <h2>Find Your Dream Home</h2>
+      <p>Use AI-powered predictions to buy or sell at the best time.</p>
+      <button id="forecastBtn">View Price Forecast</button>
+    </section>
+
+    <section class="cards">
+      <div class="card">
+        <img src="download.jpg" alt="House 1">
+        <h3>₹550,000</h3>
+        <p>3 Bed, 2 Bath, New york</p>
+        <button onclick="buyNow('House 1', 550000)">Buy</button>
+
+<script>
+  function buyNow(title, price) {
+    alert(`You chose to buy ${title} for ₹${price.toLocaleString()}`);
+    // You can also redirect or send to backend here
+  }
+</script>
+      </div>
+      <div class="card">
+        <img src="download (1).jpg" alt="House 2">
+        <h3>₹420,000</h3>
+        <p>4 Bed, 3 Bath, Canada</p>
+        <button onclick="buyNow('House 2', 420000)">Buy</button>
+
+        <script>
+          function buyNow(title, price) {
+            alert(`You chose to buy ${title} for ₹${price.toLocaleString()}`);
+            // You can also redirect or send to backend here
+          }
+        </script>
+      </div>
+      <div class="card">
+        <img src="download (3).jpg" alt="House 2">
+        <h3>₹670,000</h3>
+        <p>2Bed, 3 Bath, Paris</p>
+        <button>Buy</button>
+      </div>
+      <div class="card">
+        <img src="images.jpg" alt="House 3">
+        <h3>₹88,000</h3>
+        <p>1 Bed, 3 Bath, USA</p>
+        <button onclick="buyNow('House ', 88000)">Buy</button>
+
+        <script>
+          function buyNow(title, price) {
+            alert(`You chose to buy ${title} for ₹${price.toLocaleString()}`);
+            // You can also redirect or send to backend here
+          }
+        </script>
+      </div>
+      <!-- More cards... -->
+      
+    </section>
+  </main>
+
+
+
+
+
+  <footer>
+    <p>&copy; 2025 HouseForecast Inc.</p>
+  </footer>
+
+  <script src="house.js"></script>
+</body>
+</html>

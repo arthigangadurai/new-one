@@ -1,0 +1,109 @@
+:root {
+    --primary-color: #1a73e8;
+    --secondary-color: #f1f3f4;
+    --accent-color: #34a853;
+    --font-heading: 'Segoe UI', sans-serif;
+    --font-body: 'Arial', sans-serif;
+  }
+  
+  /* Base styles */
+  body {
+    margin: 0;
+    font-family: var(--font-body);
+    background-color: var(--secondary-color);
+    color: #333;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: var(--primary-color);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Hero section */
+  .hero {
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDzVtUBcRlv1c0-aNy1zxJG_7dADyXWsmIWELh99XgN_ae5Xq4VZ7zT68&s) center/cover no-repeat;
+  height: 1000px;
+  width: 1400px;
+  color: white;
+  display:inline-block;
+  align-items: baseline;
+  justify-content: center;
+  font-size: 2rem;
+  }
+    .hero h2 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+  }
+  
+  /* Cards layout using Flex */
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .card {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: center;
+  }
+  
+  /* Grid layout */
+  .grid-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .grid-layout {
+      grid-template-columns: 1fr 2fr;
+    }
+  }
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .hero-left {
+    flex: 2;
+  }
+  
+  .hero-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #ddd;
+  }
+  

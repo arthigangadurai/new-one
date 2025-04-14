@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)file:///C:/Users/Debater/Desktop/house/House%20Price%20Forecasting.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Add to your HTML head -->
+<script src="./House Price Forecasting 2_files/firebase-app.js.download"></script>
+<script src="./House Price Forecasting 2_files/firebase-auth.js.download"></script>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>House Price Forecasting</title>
+  <link rel="stylesheet" href="./House Price Forecasting 2_files/house.css">
+  <!-- Add to your HTML head -->
+
+</head>
+<body>
+  <header class="navbar">
+    <h1>🏡 House Price Forecast</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="file:///C:/Users/Debater/Desktop/house/buy.html">Buy</a></li>
+        <li><a href="file:///C:/Users/Debater/Desktop/house/sell.html">Sell</a></li>
+        <li><a href="file:///C:/Users/Debater/Desktop/house/forecast.html">Forecast</a></li>
+        <li><a href="file:///C:/Users/Debater/Desktop/house/login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="grid-layout">
+    <section class="hero">
+      <h2>Find Your Dream Home</h2>
+      <p>Use AI-powered predictions to buy or sell at the best time.</p>
+      <button id="forecastBtn">View Price Forecast</button>
+    </section>
+
+    <section class="cards">
+      <div class="card">
+        <img src="./House Price Forecasting 2_files/download.jpg" alt="House 1">
+        <h3>₹550,000</h3>
+        <p>3 Bed, 2 Bath, New york</p>
+        <button onclick="buyNow(&#39;House 1&#39;, 550000)">Buy</button>
+
+<script>
+  function buyNow(title, price) {
+    alert(`You chose to buy ${title} for ₹${price.toLocaleString()}`);
+    // You can also redirect or send to backend here
+  }
+</script>
+      </div>
+      <div class="card">
+        <img src="./House Price Forecasting 2_files/download (1).jpg" alt="House 2">
+        <h3>₹420,000</h3>
+        <p>4 Bed, 3 Bath, Canada</p>
+        <button onclick="buyNow(&#39;House 2&#39;, 420000)">Buy</button>
+
+        <script>
+          function buyNow(title, price) {
+            alert(`You chose to buy ${title} for ₹${price.toLocaleString()}`);
+            // You can also redirect or send to backend here
+          }
+        </script>
+      </div>
+      <div class="card">
+        <img src="./House Price Forecasting 2_files/download (3).jpg" alt="House 2">
+        <h3>₹670,000</h3>
+        <p>2Bed, 3 Bath, Paris</p>
+        <button>Buy</button>
+      </div>
+      <div class="card">
+        <img src="./House Price Forecasting 2_files/images.jpg" alt="House 3">
+        <h3>₹88,000</h3>
+        <p>1 Bed, 3 Bath, USA</p>
+        <button onclick="buyNow(&#39;House &#39;, 88000)">Buy</button>
+
+        <script>
+          function buyNow(title, price) {
+            alert(`You chose to buy ${title} for ₹${price.toLocaleString()}`);
+            // You can also redirect or send to backend here
+          }
+        </script>
+      </div>
+      <!-- More cards... -->
+      
+    </section>
+  </main>
+
+
+
+
+
+  <footer>
+    <p>© 2025 HouseForecast Inc.</p>
+  </footer>
+
+  <script src="./House Price Forecasting 2_files/house.js"></script>
+
+
+</body></html>
